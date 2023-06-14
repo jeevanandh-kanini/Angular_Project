@@ -1,0 +1,30 @@
+
+
+<app-navbar></app-navbar>
+<app-topbar></app-topbar>
+<div class="container">
+    <h2>Currency Converter</h2>
+    <div>
+      <label for="baseCurrency">Base Currency:</label>
+      <select [(ngModel)]="baseCurrency" id="baseCurrency">
+        <option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</option>
+      </select>
+    </div>
+    <div>
+      <label for="targetCurrency">Target Currency:</label>
+      <select [(ngModel)]="targetCurrency" id="targetCurrency">
+        <option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</option>
+      </select>
+    </div>
+    <div>
+      <label for="amount">Amount:</label>
+      <input type="number" [(ngModel)]="amount" id="amount" placeholder="Amount" />
+    </div>
+    <div>
+      <button (click)="convertCurrency()">Convert</button>
+    </div>
+    <div *ngIf="convertedAmount">
+      <p>Converted Amount: {{ convertedAmount | currency: targetCurrency }}</p>
+    </div>
+  </div>
+  

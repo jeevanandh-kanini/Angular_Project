@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jeevanandh24",
+      "email": "jeevanandh007@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Jeevanandh ",
+      "email": "jeevanandh007@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "shiyam",
+      "email": "shiyam@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "bhuvi",
+      "email": "bhuvi@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "chaitanya",
+      "email": "chaitanya@gmail.com"
+    }
+  ]
+}
